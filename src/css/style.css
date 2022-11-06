@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525 !important;
+    width: 100vw;
+    height: 100vh;
+    color: white !important;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    min-width: 260px;
+    height: 450px;
+    box-shadow: 0px 0px 10px rgb(18, 18, 18);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 50px auto;
+}
+
+.container-pswd {
+    width: 100%;
+    max-width: 380px;
+    min-width: 100px;
+    height: 25px;
+    background-color: #1a1a1a;
+    box-shadow: 0px 0px 5px black;
+}
+
+main h2 {
+    margin-top: 20px;
+    text-shadow: 1px 2px 5px #191919;
+}
+
+main #slider {
+    width: 60% !important;
+    max-width: 400px !important;
+}
+
+main .tamanhoPswd,
+main .btn,
+main .form-range,
+main .container-pswd {
+    margin-top: 50px;
+}
+
+main .icons {
+    position: relative;
+    float: right;
+    right: 20px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+main .icons svg:hover {
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+main .icons svg {
+    position: absolute;
+}
+
+main .icons:active {
+    transform: translate(0.5px, 0.5px)
+}
+
+main #copy-icon1 {
+    opacity: 0;
+}
+
+main .popup {
+    position: absolute;
+    
+    left: -10px;
+    font-size: 10px;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+main .btn {
+    width: 100px;
+}
+
+.pass {
+    width: 20px !important;
+    height: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+footer svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: 0.4s ease;
+}
+
+footer svg:hover {
+    filter: drop-shadow(0px 0px 3px white);
+}
+
+@media screen and (max-width: 286px) {
+    .pass {
+        font-size: 12.7px;
+    }
+}
+
+@media screen and (max-height: 580px){
+    footer {
+        position: relative;
+    }
+}
